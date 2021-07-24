@@ -1,0 +1,110 @@
+% !TEX TS-program = XeLaTeX
+\begin{flushleft}
+  \textbf{DEFENSE MATRIX} % \textcolor{supplemental}{Gain: S, Spend: \$}
+\end{flushleft}
+\label{defense}
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+
+\begin{tabular}{|
+>{\columncolor{background}}l |
+>{\columncolor{background}}l |
+>{\columncolor{background}}l |
+>{\columncolor{background}}l |
+>{\columncolor{background}}l |}
+\hline
+{\color[HTML]{000000} } &
+  {\color[HTML]{000000} Anti-Infantry} &
+  {\color[HTML]{000000} Armor-Piercing} &
+  {\color[HTML]{000000} High Explosive} &
+  {\color[HTML]{000000} Flame} \\ \hline
+
+% Infantry
+{\color[HTML]{000000} \includegraphics[height=1cm]{images/icons/unit-types/infantry-unit.png}Infantry } &
+  {\color[HTML]{000000} Damage
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/infantry-damage.png}} &
+  {\color[HTML]{000000} Defend
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/tank-damage.png}} &
+  {\color[HTML]{000000} Damage
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/he-damage.png}} &
+  {\color[HTML]{000000} Damage
+  \includegraphics[height=1cm]
+  {images/icons/damage-types/flame-damage.png}} \\ \hline
+
+% Light vehicle
+{\color[HTML]{000000}\includegraphics[height=1cm]{images/icons/unit-types/light-vehicle-unit.png}Light Vehicle } &
+  {\color[HTML]{000000} Defend
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/infantry-damage.png}} &
+  {\color[HTML]{000000} Damage
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/tank-damage.png}} &
+  {\color[HTML]{000000} Defend
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/he-damage.png}} &
+  {\color[HTML]{000000} Damage
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/flame-damage.png}} \\ \hline
+
+% Armored vehicle
+{\color[HTML]{000000}\includegraphics[height=1cm]{images/icons/unit-types/heavy-vehicle-unit.png}Armored Vehicle } &
+  {\color[HTML]{000000} Immune
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/infantry-damage.png}} &
+  {\color[HTML]{000000} Defend*
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/tank-damage.png}} &
+  {\color[HTML]{000000} Defend
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/he-damage.png}} &
+  {\color[HTML]{000000} Immune
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/flame-damage.png}} \\ \hline
+
+% Emplacement
+{\color[HTML]{000000}\includegraphics[height=1cm]{images/icons/unit-types/emplacement-unit.png}Emplacement } &
+  {\color[HTML]{000000} Defend
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/infantry-damage.png}} &
+  {\color[HTML]{000000} Damage
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/tank-damage.png}} &
+  {\color[HTML]{000000} Damage
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/he-damage.png}} &
+  {\color[HTML]{000000} Damage
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/flame-damage.png}} \\ \hline
+
+% Buildings
+{\color[HTML]{000000} Buildings} &
+  {\color[HTML]{000000} Immune
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/infantry-damage.png}} &
+  {\color[HTML]{000000} Immune
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/tank-damage.png}} &
+  {\color[HTML]{000000} Damage
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/he-damage.png}} &
+  {\color[HTML]{000000} Damage
+    \includegraphics[height=1cm]
+    {images/icons/damage-types/flame-damage.png}} \\ \hline
+\end{tabular}
+% \begin{tabularx}{150pt}{|X|X|X|X|X|X|X|}
+% \hline
+% S & S & S & & & & \\ \hline
+%   &   &   & & & & \\ \hline
+%   &   &   & & & & \\ \hline
+%   &   &   & & & & \\ \hline
+%   &   &   & & & & \\ \hline
+%   &   &   & & & & \\ \hline
+%   &   &   & & & & \\ \hline
+%   &   &   & & & & \\ \hline
+%   &   &   & & & & \\ \hline
+% \end{tabularx}
+% \end{table}

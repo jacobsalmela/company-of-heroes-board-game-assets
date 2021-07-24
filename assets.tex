@@ -1,0 +1,19 @@
+% !TEX TS-program = XeLaTeX
+% Any larger font size doesn't seem to fit everything into the single page
+\documentclass[a4paper,landscape,8pt]{extarticle}
+% Load packages
+\input{assets/libs.tex}
+% Load global configs
+\input{assets/config.tex}
+\begin{document}
+% \fbox{
+% \begin{minipage}[t]{2.5in}
+%   \input{logo.tex}
+% \end{minipage}
+% }
+\fbox{
+\begin{minipage}[t]{8in}
+  \input{assets/defense_matrix.tex}
+\end{minipage}
+}
+\end{document}

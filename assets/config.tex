@@ -1,0 +1,34 @@
+% !TEX TS-program = XeLaTeX
+% Set the font to a nice monospaced one
+% \setmainfont{Courier}
+\setmainfont[
+    Path=./fonts/Courier_Prime/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold
+]{CourierPrime}
+\setmonofont[
+    Path=./fonts/Courier_Prime/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic
+]{CourierPrime}
+
+% supplemental information (lighter-colored text)
+\definecolor{supplemental}{HTML}{C0C0C0}
+% #EDBD7D Background
+\definecolor{background}{HTML}{EDBD7D}
+% #2D7539 Light infantry - green heart
+\definecolor{infantry}{HTML}{2D7539}
+% #F9B330 Light vehicle - yellow heart
+\definecolor{light-vehicle}{HTML}{F9B330}
+% #CC1E29 Heavy vehicle - red heart
+\definecolor{heavy-vehicle}{HTML}{CC1E29}
+% #5D2362 Emplacement - purple heart
+\definecolor{emplacement}{HTML}{5D2362}
+
+% Use fbox, but don't draw borders
+% This helps add a little buffer space between elements
+% I comment this out if I'm adjusting where components are so I can see the borders
+\setlength{\fboxrule}{0pt}

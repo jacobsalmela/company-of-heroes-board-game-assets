@@ -1,0 +1,30 @@
+name: build latex document
+on:
+  push:
+    # Just build the docs for anything that's not master
+    branches-ignore:
+      - main
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: set up git repository
+        uses: actions/checkout@v2
+
+      - name: generate assets
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: assets.tex
+          latexmk_use_xelatex: true
+
+      - name: generate assets in grayscale
+        run: |
+          sudo apt install ghostscript
+          gs -sOutputFile=./coh-bg-assets-grayscale.pdf -sDEVICE=pdfwrite -sColorConversionStrategy=Gray -dProcessColorModel=/DeviceGray -dCompatibilityLevel=1.4 -dAutoRotatePages=/None -dNOPAUSE -dBATCH ./coh-bg-assets-grayscale.pdf
+
+      - name: upload pdf artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: jacobsalmela/company-of-heroes-board-game-assets
+          path: ./*.pdf
