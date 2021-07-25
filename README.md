@@ -27,7 +27,7 @@ You can customize your game by changing a few lines of code or importing your ow
 To start, I only made a Defense Matrix, since people I played with had a hard time reading it.
 
 <p><align="center">
-<img src="https://user-images.githubusercontent.com/3843505/126884494-18ad6e57-7a6f-4fcc-ad89-9659ba76992d.png" alt="custom-defense-matrix">
+<img src="https://user-images.githubusercontent.com/3843505/126902733-77bd5d77-dd05-4a25-a080-8020b2234c97.png" alt="custom-defense-matrix">
 </p>
 
 Submit feedback by [filling out the template](https://github.com/jacobsalmela/company-of-heroes-board-game-assets/issues/new?template=feedback.md).  Feel free to add additional comments as necessary.  
